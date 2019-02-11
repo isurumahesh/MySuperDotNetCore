@@ -21,9 +21,10 @@ namespace MySuper.Test
             using (var context = new MySuperContext(optionsBuilder.Options))
             {
                 var customerRepository = new CutomerRepository(context);
-                customerRepository.InsertCustomer(new Customer { FirstName = "Isuru" });
-                var result=context.SaveChanges();            
-                Assert.Equal(1, result);
+                var customer = new Customer { FirstName = "Isuru" };
+                customerRepository.InsertCustomer(customer);
+                     
+                Assert.Equal(1, customer.Id);
             }
         }
     }
