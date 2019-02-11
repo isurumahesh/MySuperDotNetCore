@@ -20,7 +20,7 @@ namespace MySuper.Api.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
            
-            return new string[] { "value_x", "value_z" };
+            return new string[] { "value_x_x", "value_z_z" };
         }
 
         // GET api/values/5
