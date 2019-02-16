@@ -24,7 +24,7 @@ namespace MySuper.Test
                 var customer = new Customer { FirstName = "Isuru" };
                 customerRepository.InsertCustomer(customer);
                      
-                Assert.Equal(2, customer.Id);
+                Assert.Equal(1, customer.Id);
             }
         }
     }
