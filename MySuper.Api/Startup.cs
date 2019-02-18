@@ -70,7 +70,10 @@ namespace MySuper.Api
             }
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseMvc();
+           
         }
     }
 }
