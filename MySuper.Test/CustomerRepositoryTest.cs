@@ -44,7 +44,7 @@ namespace MySuper.Test
                 customerRepository.InsertCustomer(customer2);
 
                 var count = context.Customers.Count();
-                Assert.Equal(4, count);
+                Assert.Equal(2, count);
             }
         }
     }
