@@ -44,4 +44,8 @@ jobs:
         publish-profile: ${{secrets.AZURE_MYSUPERWEBAPP_SECRET}}
         package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH}}/myapp'
         
+    - name: Step in work flow
+      if: success()
+      run: echo "Pipeline ran successfully"
+        
       
